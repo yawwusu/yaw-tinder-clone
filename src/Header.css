@@ -1,0 +1,12 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.Header-logo {
+  height: 40px;
+  object-fit: contain;
+}
