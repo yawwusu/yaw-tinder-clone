@@ -1,0 +1,35 @@
+.Chat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 70px;
+  border-bottom: 1px solid #fafafa;
+  transition: 0.5s;
+}
+
+.Chat:hover {
+  background-color: rgb(241, 239, 239);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Chat-image {
+  margin-right: 20px;
+}
+
+.Chat-details {
+  flex: 1;
+}
+
+.Chat-details > p {
+  color: grey;
+}
+
+.Chat-timestamp {
+  color: lightgrey;
+}

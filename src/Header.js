@@ -1,22 +1,36 @@
-import { IconButton } from "@material-ui/core";
-import { Forum, Person } from "@material-ui/icons";
 import React from "react";
+import { Link, useHistory } from "react-router-dom";
+import { IconButton } from "@material-ui/core";
+import { ArrowBackIos, Forum, Person } from "@material-ui/icons";
 import "./Header.css";
 
-function Header() {
+function Header({ backButton }) {
+  const history = useHistory();
+  const handleClick = function () {
+    history.replace(backButton);
+  };
+
   return (
     <header className="Header">
-      <IconButton>
-        <Person />
-      </IconButton>
+      {backButton ? (
+        <IconButton onClick={handleClick}>
+          <ArrowBackIos fontSize="large" />
+        </IconButton>
+      ) : (
+        <IconButton>
+          <Person />
+        </IconButton>
+      )}
       <img
         className="Header-logo"
-        src="https://logos-world.net/wp-content/uploads/2020/09/Tinder-Emblem.png"
+        src="https://loghi-famosi.com/wp-content/uploads/2020/09/Tinder-Symbolo.png"
         alt="tinder icon"
       />
-      <IconButton>
-        <Forum />
-      </IconButton>
+      <Link to="/chats">
+        <IconButton>
+          <Forum />
+        </IconButton>
+      </Link>
     </header>
   );
 }
