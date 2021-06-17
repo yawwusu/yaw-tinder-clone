@@ -21,11 +21,13 @@ function Header({ backButton }) {
           <Person />
         </IconButton>
       )}
-      <img
-        className="Header-logo"
-        src="https://loghi-famosi.com/wp-content/uploads/2020/09/Tinder-Symbolo.png"
-        alt="tinder icon"
-      />
+      <Link to="/">
+        <img
+          className="Header-logo"
+          src="https://penmenpress.com/wp-content/uploads/2018/04/Tinder-Logo.png"
+          alt="tinder icon"
+        />
+      </Link>
       <Link to="/chats">
         <IconButton>
           <Forum />
