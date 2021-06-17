@@ -1,3 +1,18 @@
+# YAW'S TINDER CLONE
+This is the source code for my Tinder Clone done with React.js and Firebase. Features include:
+
+- TinderCards' swipe left and swipe right features
+- Chat
+- Material UI interface
+- and many many more...
+
+Check out the web app on [My-tinder-clone](https://yaw-tinder-clone.web.app/)
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
