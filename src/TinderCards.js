@@ -5,7 +5,6 @@ import "./TinderCards.css";
 
 function TinderCards() {
   const [people, setPeople] = React.useState([]);
-  console.log("people", people);
 
   React.useEffect(() => {
     const unsubscribe = db
